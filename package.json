@@ -1,6 +1,10 @@
 {
+  "name": "mynav",
+  "version": "1.0.0",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
