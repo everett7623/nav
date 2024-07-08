@@ -1,15 +1,13 @@
-const API_URL = 'https://api.yoursite.com'
-
-export async function addSite(site) {
-  const response = await fetch(`${API_URL}/sites`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(site),
-  })
-  if (!response.ok) {
-    throw new Error('Failed to add site')
+// 可以在这里定义 API 请求方法
+export const fetchSites = async () => {
+  try {
+    const response = await fetch('/api/sites');
+    if (!response.ok) {
+      throw new Error('Failed to fetch sites');
+    }
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching sites:', error.message);
+    throw error;
   }
-  return response.json()
 }
