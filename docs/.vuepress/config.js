@@ -3,19 +3,24 @@ module.exports = {
   themeConfig: {
     sidebar: [
       {
-        title: '分类1',
+        title: '常用工具',
+        path: '/tools/',
+        collapsable: false,
         children: [
-          '/category1/site1',
-          '/category1/site2',
+          { title: '搜索引擎', path: '/tools/search-engines' },
+          { title: '在线工具', path: '/tools/online-tools' },
         ]
       },
       {
-        title: '分类2',
+        title: '学习资源',
+        path: '/resources/',
+        collapsable: false,
         children: [
-          '/category2/site1',
-          '/category2/site2',
+          { title: '编程学习', path: '/resources/programming' },
+          { title: '语言学习', path: '/resources/languages' },
         ]
       },
     ]
-  }
+  },
+  plugins: ['@vuepress/active-header-links', '@vuepress/back-to-top', '@vuepress/medium-zoom']
 }
