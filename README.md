@@ -15,4 +15,3 @@ features:
 footer: MIT Licensed | Copyright © 2023-present Your Name
 ---
 
-<NavLinks />
