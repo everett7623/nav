@@ -1,4 +1,4 @@
----
+
 home: true
 heroImage: /images/logo.png
 heroText: 导航站
@@ -13,5 +13,5 @@ features:
 - title: 高性能
   details: VuePress 为每个页面预渲染生成静态的 HTML，同时在加载后作为 SPA 运行。
 footer: MIT Licensed | Copyright © 2023-present Your Name
----
+
 
